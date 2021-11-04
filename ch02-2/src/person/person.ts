@@ -1,3 +1,4 @@
+import * as U from '../utils/makeRandomNumber'
 export interface Iperson {
     name:string
     age:Number
@@ -8,4 +9,4 @@ class Peson implements Iperson {
 }
 
 export const makePerson = (name:string,
-                    age:number = makeRandomNumber()) => ({name, age})
+    age:number = U.makeRandomNumber()) => ({name, age})
