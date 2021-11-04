@@ -1,12 +1,8 @@
-import * as U from '../utils/makeRandomNumber'
-export interface Iperson {
-    name:string
-    age:Number
-}
-
-class Peson implements Iperson {
+import { makeRandomNumber } from '../utils/makeRandomNumber'
+import IPerson from './IPerson'
+export default class Peson implements IPerson {
     constructor(public name: string, public age: number) {}
 }
 
 export const makePerson = (name:string,
-    age:number = U.makeRandomNumber()) => ({name, age})
+    age:number = makeRandomNumber()) => ({name, age})

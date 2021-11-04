@@ -1,8 +1,9 @@
-import { Iperson, makePerson } from './person/Person'
+import IPerson from './person/IPerson'
+import Person, {makePerson} from './person/Person'
  
 const testMakePerson = (): void => {
-    let jane: Iperson = makePerson('Jane')
-    let jack: Iperson = makePerson('Jack')
+    let jane: IPerson = makePerson('Jane')
+    let jack: IPerson = makePerson('Jack')
     console.log(jane, jack)
 }
 
