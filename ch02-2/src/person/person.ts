@@ -1,6 +1,6 @@
 let MAX_AGE = 100
 
-interface Iperson {
+export interface Iperson {
     name:string
     age:Number
 }
